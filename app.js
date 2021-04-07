@@ -46,8 +46,8 @@ function generatePictures(data) {
     galleryImg.classList.add("gallery-img");
     galleryImg.innerHTML = `
     <div class="gallery-info">
-    <p>${photo.photographer}</p>
-    <a href=${photo.src.original}>Download</a>
+    <a href=${photo.photographer_url} target="_blank"><p>${photo.photographer}</p></a>
+    <a href=${photo.src.original} target="_blank">Download</a>
     </div>
     <img src=${photo.src.large} />
     `;
